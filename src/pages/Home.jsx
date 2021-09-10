@@ -17,9 +17,7 @@ function Home({bookItems}) {
         </div>
         <h2 className="content__title">Все книги</h2>
         <div className="content__items">
-        {bookItems.map((book)=> (
-          <BookBlock key={book.idx} {...book}/>
-    ))}
+        {bookItems.map((book) => (<BookBlock key={book.idx} {...book}/>))}
           </div>
       </div>
    
